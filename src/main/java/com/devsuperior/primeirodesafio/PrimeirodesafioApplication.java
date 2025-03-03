@@ -38,7 +38,8 @@ public class PrimeirodesafioApplication implements CommandLineRunner {
 		order.setDiscount(sc.nextDouble());
 
 		double total = orderService.total(order);
-		System.out.println(total);
+		System.out.println("Pedido código: " + order.getCode());
+		System.out.println("Valor total: " + total);
 
 		sc.close();
 	}

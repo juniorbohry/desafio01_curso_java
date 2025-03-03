@@ -33,6 +33,10 @@ public class Order {
         return discount;
     }
 
+    public Double getValueDiscount() {
+        return (discount/100) * basic;
+    }
+
     public void setCode(Integer code) {
         this.code = code;
     }
